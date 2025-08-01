@@ -157,7 +157,7 @@ function Carousel() {
         ))}
       </div>
 
-      <div className="absolute top-1 left-3 z-30 bg-white p-6 rounded shadow-lg w-[300px] h-[600px] overflow-y-auto">
+      <div className="absolute top-1 left-3 z-30 bg-white p-6 rounded shadow-lg w-[300px] h-[500px] overflow-y-auto">
   <h2 className="text-xl font-bold mb-4"><u><b>Search Here</b></u></h2>
   <form>
     <div className="mb-4">
