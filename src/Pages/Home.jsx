@@ -14,7 +14,7 @@ import img11 from '../Image/img/client/product1.jpg';
 import img12 from '../Image/img/client/product2.jpg';
 import aboutUsImg from '../Image/img/about-us.jpg';
 import aboutSssImg from '../Image/img/about-sss.jpg';
-import whyUsImg from '../Image/img/why-us-2.jpg';
+import whyChooseUsImage from '../Image/img/why-us-2.jpg';
 import vrindaImg from '../Image/img/client/vrinda-tayal.jpg';
 import shiviImg from '../Image/img/client/shivi-jain.jpg';
 import tamannaImg from '../Image/img/client/tamanna-khurana.jpg';
@@ -23,6 +23,7 @@ import srishtiImg from '../Image/img/client/srishti-aggarwal.jpg';
 import sapnaImg from '../Image/img/client/sapna-aggarwal.jpg';
 import whatsappImg from '../Image/img/whatsapp.gif';
 import callImg from '../Image/img/portfolio/1.jpg';
+
 import logo1 from '../Image/img/clients-logo/1.png';
 import logo2 from '../Image/img/clients-logo/2.png';
 import logo3 from '../Image/img/clients-logo/3.png';
@@ -383,7 +384,14 @@ function WhyChooseUsSection() {
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-8">
-          {/* 🖼️ Image on Left */}
+         {/* 🖼️ Image on Left */}
+<div className="lg:w-1/2">
+  <img
+    src={whyChooseUsImage} // ← yahan image ka path apne according set karo
+    alt="Why Choose Us" 
+    className="rounded-2xl shadow-lg w-full h-auto"
+  />
+</div>
          
 
           {/* 📝 Text on Right */}
