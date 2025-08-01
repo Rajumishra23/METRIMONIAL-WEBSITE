@@ -389,25 +389,26 @@ function WhyChooseUsSection() {
   <img
     src={whyChooseUsImage} // ← yahan image ka path apne according set karo
     alt="Why Choose Us" 
-    className="rounded-2xl shadow-lg w-full h-auto"
+    className="rounded-2xl shadow-lg w-full h-[500px] object-cover" // Adjust height as needed
   />
 </div>
          
 
           {/* 📝 Text on Right */}
-          <div className="lg:w-1/2 bg-pink-100 p-6 rounded-2xl shadow-md">
-            <div className="text-center lg:text-left">
-              <h3 className="text-pink-600  font-semibold mb-1">Why Choose Us?</h3>
-              <h2 className="text-xl w-4  md:text-5xl font-bold mb-4 ">
-                Why Global Rishte?
-              </h2>
-            </div>
-            <p className="text-gray-700  leading-relaxed mb-6">
-              Choosing the right matrimonial service can make all the difference in finding your perfect match.
-              At Global Rishte Matrimonial Services, we stand out in the crowded matchmaking industry because of our
-              commitment to excellence, integrity, and personalized service.
-            </p>
-
+<div className="lg:w-1/2 bg-pink-100 p-8 rounded-2xl shadow-lg">
+  <div className="text-center lg:text-left">
+    <h3 className="text-pink-600 text-2xl font-semibold mb-2">
+      Why Choose Us?
+    </h3>
+    <h2 className="text-3xl md:text-6xl font-extrabold text-gray-800 mb-6">
+      Why Global Rishte?
+    </h2>
+  </div>
+  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+    Choosing the right matrimonial service can make all the difference in finding your perfect match.
+    At <strong className="text-pink-700">Global Rishte Matrimonial Services</strong>, we stand out in the crowded matchmaking industry
+    because of our commitment to <em>excellence</em>, <em>integrity</em>, and <em>personalized service</em>.
+  </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 { icon: 'fas fa-shield-alt', title: 'Confidential & Secure' },
