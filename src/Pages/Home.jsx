@@ -248,7 +248,7 @@ function WelcomeSection() {
         <div className="flex flex-col md:flex-row items-center">
           {/* Left Side - Image & Experience Box */}
           <div className="md:w-1/2 mb-8 md:mb-0 relative">
-            <div className="h-full overflow-hidden rounded-lg shadow-lg">
+            <div className="h-[650px] overflow-hidden rounded-lg shadow-lg">
               <img
                 src={aboutUsImg}
                 alt="About Us"
@@ -262,15 +262,19 @@ function WelcomeSection() {
           </div>
 
           {/* Right Side - Text & List */}
-          <div className="md:w-1/2 md:pl-12">
-            <div className="text-center md:text-left">
-              <h3 className="text-pink-600 text-sm font-semibold mb-1">Introduction</h3>
-              <h2 className="text-xl md:text-3xl font-bold mb-4 leading-tight ">
-                We Make Your Every Moment Special
-              </h2>
-              <p className="mb-1 text-gray-500 text-base leading-tight ">
-                At Global Rishte Matrimonial Services, we believe that marriage is one of the most significant milestones in a person’s life. With a deep understanding of the cultural and traditional values that shape matrimonial choices, we have dedicated ourselves to providing a platform where individuals can find their perfect life partner.
-              </p>
+<div className="md:w-1/2 md:pl-12 py-6">
+  <div className="text-center md:text-left">
+    <h3 className="text-pink-600 text-xl font-semibold mb-2">
+      Introduction
+    </h3>
+    <h2 className="text-3xl md:text-3xl font-extrabold text-gray-800 mb-6 leading-snug">
+      We Make Your Every Moment Special
+    </h2>
+    <p className="text-lg text-gray-700 leading-relaxed mb-4">
+      At <strong className="text-pink-700">Global Rishte Matrimonial Services</strong>, we believe that marriage is one of the most
+      cherished milestones in a person’s journey. With a deep appreciation of the cultural and traditional values that guide
+      matrimonial choices, we have dedicated ourselves to creating a personalized platform where hearts find lasting harmony.
+    </p>
               <ul className="space-y-1 text-gray-800 text-sm leading-tight ">
                 {[
                   '5500+ Verified Profiles',
@@ -389,7 +393,7 @@ function WhyChooseUsSection() {
   <img
     src={whyChooseUsImage} // ← yahan image ka path apne according set karo
     alt="Why Choose Us" 
-    className="rounded-2xl shadow-lg w-full h-[500px] object-cover" // Adjust height as needed
+    className="rounded-2xl shadow-lg w-full h-[600px] object-cover" // Adjust height as needed
   />
 </div>
          
