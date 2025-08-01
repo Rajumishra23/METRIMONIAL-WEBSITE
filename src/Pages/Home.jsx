@@ -158,8 +158,8 @@ function Carousel() {
       </div>
 
       {/* ✅ Form Overlay */}
-      <div className="absolute top-1 left-3 z-30 bg-white p-6 rounded shadow-lg w-[300px] h-[450px] overflow-y-auto "> 
-        <h2 className="text-xl font-bold mb-4"><u><b>Contact Us</b></u></h2>
+      <div className="absolute top-1 left-3 z-30 bg-white p-6 rounded shadow-lg w-[300px] h-[500px] overflow-y-auto "> 
+        <h2 className="text-xl font-bold mb-4"><u><b>Get an instance Quots</b></u></h2>
         <form>
           <div className="mb-4">
             <label className="block text-gray-700">Name</label>
@@ -169,13 +169,29 @@ function Carousel() {
               placeholder="Enter your name"
             />
           </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">phone</label>
+            <input
+              type="text"
+              className="w-full border px-3 py-2 rounded"
+              placeholder="phone"
+            />
+          </div>
           
           <div className="mb-4">
             <label className="block text-gray-700">Email</label>
             <input
               type="email"
               className="w-full border px-3 py-2 rounded"
-              placeholder="Enter your email"
+              placeholder="email"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">select service</label>
+            <input
+              type="email"
+              className="w-full border px-3 py-2 rounded"
+              placeholder="service"
             />
           </div>
           <button className="bg-blue-500 text-white px-4 py-2 rounded">
@@ -354,7 +370,7 @@ function WhyChooseUsSection() {
           <div className="lg:w-1/2 bg-pink-100 p-6 rounded-2xl shadow-md">
             <div className="text-center lg:text-left">
               <h3 className="text-pink-600  font-semibold mb-1">Why Choose Us?</h3>
-              <h2 className="text-xl md:text-5xl font-bold mb-4 ">
+              <h2 className="text-xl w-4  md:text-5xl font-bold mb-4 ">
                 Why Global Rishte?
               </h2>
             </div>
