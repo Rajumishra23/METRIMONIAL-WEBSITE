@@ -52,7 +52,7 @@ function Header() {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       {/* Top info bar */}
-      <div className="bg-gray-100 py-2 text-sm">
+      <div className="bg-gray-100 py-2 ">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-4">
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 text-gray-600">
             <span className="whitespace-nowrap"></span>
@@ -73,7 +73,7 @@ function Header() {
       </div>
 
       {/* Logo and Navigation */}
-      <div className="max-w-7xl mx-auto px-2 py-1 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
         <a href="index.php.html">
           <img src={img10} alt="Global Rishte Logo" className="h-12" />
         </a>
@@ -83,7 +83,7 @@ function Header() {
           className="md:hidden text-gray-700"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <i className="fas fa-bars text-2xl"></i>
+          <i className="fas fa-bars text-3xl"></i>
         </button>
 
         {/* Nav Links */}
@@ -158,7 +158,7 @@ function Carousel() {
       </div>
 
       {/* ✅ Form Overlay */}
-      <div className="absolute top-1 left-8 z-30 bg-white p-6 rounded shadow-lg w-[200px] h-[200px]overflow-y-auto "> 
+      <div className="absolute top-1 left-3 z-30 bg-white p-6 rounded shadow-lg w-[300px] h-[450px] overflow-y-auto "> 
         <h2 className="text-xl font-bold mb-4"><u><b>Contact Us</b></u></h2>
         <form>
           <div className="mb-4">
@@ -211,14 +211,14 @@ function WelcomeSection() {
         <div className="flex flex-col md:flex-row items-center">
           {/* Left Side - Image & Experience Box */}
           <div className="md:w-1/2 mb-8 md:mb-0 relative">
-            <div className="h-[400px] overflow-hidden rounded-lg shadow-lg">
+            <div className="h-full overflow-hidden rounded-lg shadow-lg">
               <img
                 src={aboutUsImg}
                 alt="About Us"
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            <div className="absolute bottom-[-40px] left-4 bg-pink-100 p-6 rounded-lg shadow-md w-[220px]">
+            <div className="absolute bottom-[-40px] left-4 bg-pink-100 p-6 rounded-lg shadow-md w-full">
               <h4 className="text-4xl font-bold text-pink-600">13+</h4>
               <h3 className="text-base font-semibold">Years Of Experiences</h3>
             </div>
@@ -254,7 +254,7 @@ function WelcomeSection() {
               <div className="mt-8 flex justify-center md:justify-start space-x-4">
                 <a
                   href="about-us.php.html"
-                  className="border border-gray-400 text-gray-700 px-3 py-2 rounded hover:bg-gray-100 text-sm"
+                  className="border border-gray-400 text-gray-700 px-4 py-2 rounded hover:bg-gray-100 text-sm"
                 >
                   Read More
                 </a>
@@ -310,7 +310,7 @@ function ClientsSection() {
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h3 className="text-pink-600 text-sm">Clients</h3>
+          <h3 className="text-pink-600 ">Clients</h3>
           <h2 className="text-xl font-bold">Our Clients</h2>
         </div>
 
@@ -323,12 +323,12 @@ function ClientsSection() {
               <img
                 src={client.img}
                 alt={client.name}
-                className="w-[500px] h-33 object-cover"
+                className="w-full h-33 object-cover"
               />
               <div className="p-3">
                 <h3 className="text-sm font-semibold mb-1">{client.name}</h3>
                 {client.details.map((detail, i) => (
-                  <p key={i} className="text-[11px] text-gray-600 leading-tight">
+                  <p key={i} className="text-[15px] text-gray-600 leading-tight">
                     {detail}
                   </p>
                 ))}
@@ -353,12 +353,12 @@ function WhyChooseUsSection() {
           {/* 📝 Text on Right */}
           <div className="lg:w-1/2 bg-pink-100 p-6 rounded-2xl shadow-md">
             <div className="text-center lg:text-left">
-              <h3 className="text-pink-600 text-sm font-semibold mb-1">Why Choose Us?</h3>
-              <h2 className="text-xl md:text-3xl font-bold mb-4 leading-tight">
+              <h3 className="text-pink-600  font-semibold mb-1">Why Choose Us?</h3>
+              <h2 className="text-xl md:text-5xl font-bold mb-4 ">
                 Why Global Rishte?
               </h2>
             </div>
-            <p className="text-gray-700 text-sm leading-relaxed mb-6">
+            <p className="text-gray-700  leading-relaxed mb-6">
               Choosing the right matrimonial service can make all the difference in finding your perfect match.
               At Global Rishte Matrimonial Services, we stand out in the crowded matchmaking industry because of our
               commitment to excellence, integrity, and personalized service.
@@ -372,7 +372,7 @@ function WhyChooseUsSection() {
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <i className={`${item.icon} text-pink-600 text-lg mt-1`}></i>
-                  <h3 className="text-sm font-medium text-gray-800">{item.title}</h3>
+                  <h3 className=" font-medium text-gray-800">{item.title}</h3>
                 </div>
               ))}
             </div>
@@ -401,7 +401,7 @@ function FactsSection() {
             <img
               src={aboutSssImg}
               alt="Facts"
-              className="w-full h-[400px] object-cover rounded-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
 
@@ -443,7 +443,7 @@ function FactsSection() {
                         strokeLinecap="round"
                       />
                     </svg>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm font-bold">
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  font-bold">
                       {fact.value}%
                     </div>
                   </div>
@@ -469,7 +469,7 @@ function GallerySection() {
           <h3 className="text-pink-600 text-sm uppercase tracking-widest mb-2">
             Photo Gallery
           </h3>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-5xl md:text-4xl font-bold text-gray-800">
             Our Captured Moments
           </h2>
         </div>
@@ -511,7 +511,7 @@ const logos = [
 function ClientsLogoSection() {
   return (
     <section className="py-8"> {/* Less padding vertically */}
-      <div className="max-w-8xl mx-auto px-4"> {/* Smaller width and padding */}
+      <div className="max-w-10xl mx-auto px-4"> {/* Smaller width and padding */}
         <div className="text-center mb-6">
           <h1 className="text-pink-600 text-4px">Clients List</h1> {/* Smaller subheading */}
           <h1 className="text-xl font-semibold">Our Clients</h1> {/* Smaller main heading */}
@@ -537,7 +537,7 @@ export { ClientsLogoSection };
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8 text-sm">
+    <footer className="bg-gray-900 text-white py-8">
       <div className="max-w-7xl mx-auto px-4">
         {/* Newsletter Signup */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
