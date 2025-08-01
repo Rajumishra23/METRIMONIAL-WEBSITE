@@ -157,46 +157,66 @@ function Carousel() {
         ))}
       </div>
 
-      {/* ✅ Form Overlay */}
-      <div className="absolute top-1 left-3 z-30 bg-white p-6 rounded shadow-lg w-[300px] h-[500px] overflow-y-auto "> 
-        <h2 className="text-xl font-bold mb-4"><u><b>Get an instance Quots</b></u></h2>
-        <form>
-          <div className="mb-4">
-            <label className="block text-gray-700">Name</label>
-            <input
-              type="text"
-              className="w-full border px-3 py-2 rounded"
-              placeholder="Enter your name"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">phone</label>
-            <input
-              type="text"
-              className="w-full border px-3 py-2 rounded"
-              placeholder="phone"
-            />
-          </div>
-          
-          <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
-            <input
-              type="email"
-              className="w-full border px-3 py-2 rounded"
-              placeholder="email"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">select service</label>
-            <input
-              type="email"
-              className="w-full border px-3 py-2 rounded"
-              placeholder="service"
-            />
-          </div>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded">
-            Submit
-          </button>
+      <div className="absolute top-1 left-3 z-30 bg-white p-6 rounded shadow-lg w-[300px] h-[300px] overflow-y-auto">
+  <h2 className="text-xl font-bold mb-4"><u><b>Search Here</b></u></h2>
+  <form>
+    <div className="mb-4">
+      <label className="block text-gray-700">Looking For</label>
+      <select className="w-full border px-3 py-2 rounded">
+        <option value="">Select</option>
+        <option value="bride">Bride</option>
+        <option value="groom">Groom</option>
+      </select>
+    </div>
+
+    <div className="mb-4">
+      <label className="block text-gray-700">Age</label>
+      <input
+        type="number"
+        className="w-full border px-3 py-2 rounded"
+        placeholder="Enter age"
+      />
+    </div>
+
+    <div className="mb-4">
+      <label className="block text-gray-700">Religion</label>
+      <input
+        type="text"
+        className="w-full border px-3 py-2 rounded"
+        placeholder="Enter religion"
+      />
+    </div>
+
+    <div className="mb-4">
+      <label className="block text-gray-700">Caste</label>
+      <input
+        type="text"
+        className="w-full border px-3 py-2 rounded"
+        placeholder="Enter caste"
+      />
+    </div>
+
+    <div className="mb-4">
+      <label className="block text-gray-700">Community</label>
+      <input
+        type="text"
+        className="w-full border px-3 py-2 rounded"
+        placeholder="Enter community"
+      />
+    </div>
+
+    <div className="mb-4">
+      <label className="block text-gray-700">Country</label>
+      <input
+        type="text"
+        className="w-full border px-3 py-2 rounded"
+        placeholder="Enter country"
+      />
+    </div>
+
+    <button className="bg-blue-500 text-white px-4 py-2 rounded w-full">
+      Submit
+    </button>
         </form>
       </div>
 
